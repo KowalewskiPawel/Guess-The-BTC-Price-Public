@@ -136,7 +136,6 @@ function Leaderboard(props) {
   );
 
   useEffect(() => {
-    s;
     getIdTokenPromise();
   }, []);
 
