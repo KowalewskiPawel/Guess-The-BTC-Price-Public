@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Luckiest Guy", cursive;
+  color: antiquewhite;
+  background-color: rgb(102, 97, 92);
+  text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Title {
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgb(70, 67, 64);
+  text-align: center;
+}
+
+.BTCPriceDisplay {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 2rem;
+  margin-left: auto;
+  width: 200px;
+  height: auto;
+  background-color: rgb(94, 90, 86);
+  align-items: center;
+  text-align: center;
+  border: solid 2px rgb(177, 163, 138);
+  border-radius: 10px;
+  color: antiquewhite;
+  font-family: "Luckiest Guy", cursive;
+  padding: 0.4em;
+  transition: transform 200ms ease-in-out;
+}
+
+#modal {
+  position: relative;
+  top: -80px;
+  left: 20px;
+  margin-top: 2rem;
+  width: 100px;
+  height: auto;
+  background-color: rgb(94, 90, 86);
+  align-items: center;
+  text-align: center;
+  border: solid 2px rgb(177, 163, 138);
+  border-radius: 10px;
+  color: antiquewhite;
+  font-family: "Luckiest Guy", cursive;
+  padding: 0.5em;
+  transition: transform 200ms ease-in-out;
+}
+
+#modal:hover {
+  transform: scale(1.1);
+}
+
+#modal:active {
+  transform: scale(0.9);
+}
+
+/* Main */
+
+.audioButtons {
+  position: relative;
+  left: -43%;
+  top: -70px;
+}
+
+.audioButtons > * {
+  width: 40px;
+  height: 40px;
+  align-items: baseline;
+  margin: 1em auto auto 1em;
+  background-color: rgb(94, 90, 86);
+  align-items: center;
+  text-align: center;
+  border: solid 2px rgb(177, 163, 138);
+  border-radius: 20px;
+  color: antiquewhite;
+  font-family: "Luckiest Guy", cursive;
+  padding: 0.4em;
+  transition: transform 200ms ease-in-out;
+}
+
+.scores {
+  position: relative;
+  transform: translate(0%, -60%);
+  font-size: 1.5rem;
+}
+
+.container {
+  position: relative;
+  transform: translate(0%, -20%);
+  background-color: rgb(94, 90, 86);
+  align-items: center;
+  width: 340px;
+  height: 340px;
+  border: dashed 4px rgb(177, 163, 138);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container > * {
+  margin: 1rem;
+}
+
+#productImage {
+  width: 10rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .gameButtons > button {
+    display: block;
+    margin: auto;
+  }
+  .audioButtons {
+    position: relative;
+    transform: translate(4%, -0%);
+  }
+  #modal {
+    position: relative;
+    top: -5rem;
+  }
+  button:hover {
+    transform: none;
+  }
+
+  button:active {
+    transform: none;
+  }
+  #modal:hover {
+    transform: none;
+  }
+
+  #modal:active {
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gameButtons > button {
+    display: block;
+    margin: auto;
+  }
+  .audioButtons {
+    position: relative;
+    transform: translate(4%, -10%);
+  }
+  button:hover {
+    transform: none;
+  }
+
+  button:active {
+    transform: none;
+  }
+  #modal:hover {
+    transform: none;
+  }
+
+  #modal:active {
+    transform: none;
+  }
+  #modal {
+    position: relative;
+    top: -5rem;
+  }
+  .gameButtons > input {
+    padding: 0.01rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .audioButtons {
+    position: relative;
+    left: -47%;
+    top: -70px;
+  }
+}
+
+.gameButtons > button,
+input {
+  background-color: rgb(94, 90, 86);
+  align-items: center;
+  text-align: center;
+  border: solid 2px rgb(177, 163, 138);
+  border-radius: 10px;
+  color: antiquewhite;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.1rem;
+  padding: 0.5em;
+  transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.gameButtons > * {
+  margin: 1em;
+}
