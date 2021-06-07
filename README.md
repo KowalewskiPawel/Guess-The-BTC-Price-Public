@@ -10,10 +10,6 @@ Guess The BTC Price - is a game where your aim is to guess the price of various 
 
 ### React
 
-Both web version and mobile version was build with React. The project is based on stateful components, however in order to
-loop the "White Noise" sound, createRef "hook" has been used. Clock works thanks to intervals which are constantly changing
-the state. All of the sessions are stored in the local store of user's browser. On every run, ComponentDidMount is called to check
-the local storage for pervious session. Thanks to moment library, the dates are easily compared so sessions array can be erased.
 
 ### Mobile version
 
