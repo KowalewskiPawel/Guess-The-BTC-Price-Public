@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Guess The BTC Price
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Guess The BTC Price - is a game where your aim is to guess the price of various products, (starting from food, finishing up on luxury goods). However, the catch here is that you have to guess the price in Bitcoins. Prices of all of the products are based on world's average prices in dollars.
 
-## Available Scripts
+## Technology Stack
 
-In the project directory, you can run:
+- React: web version's core
+- Redux: state management
+- Firebase: storing the results
 
-### `npm start`
+### React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Both web version and mobile version was build with React. The project is based on stateful components, however in order to
+loop the "White Noise" sound, createRef "hook" has been used. Clock works thanks to intervals which are constantly changing
+the state. All of the sessions are stored in the local store of user's browser. On every run, ComponentDidMount is called to check
+the local storage for pervious session. Thanks to moment library, the dates are easily compared so sessions array can be erased.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Mobile version
 
-### `npm test`
+COMING SOON
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Google Play Store
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Known issues
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- After logging to leaderboard, games restarts what may result is highscore lose
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TODO
 
-### `npm run eject`
+- Mobile version
+- cleaner code
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Live version
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://guessthebtcprice.netlify.app/](https://guessthebtcprice.netlify.app/)
