@@ -2,6 +2,22 @@
 
 Guess The BTC Price - is a game where your aim is to guess the price of various products, (starting from food, finishing up on luxury goods). However, the catch here is that you have to guess the price in Bitcoins. Prices of all of the products are based on world's average prices in dollars.
 
+### Installation
+
+1. Clone the repository
+2. Install depenencies `npm i`
+3. Inside of the `Leaderboard.js` file located in the components directory, add firebase configuration object:
+
+```
+const firebaseApp = initializeApp({
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+});
+```
+4. Run the app with `npm start`
+
+
 ## Technology Stack
 
 - React: web version's core
