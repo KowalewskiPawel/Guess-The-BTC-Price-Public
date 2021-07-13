@@ -5,7 +5,7 @@ Guess The BTC Price - is a game where your aim is to guess the price of various 
 ### Installation
 
 1. Clone the repository
-2. Install depenencies `npm i`
+2. Install dependencies `npm i`
 3. Inside of the `Leaderboard.js` file located in the components directory, add firebase configuration object:
 
 ```
